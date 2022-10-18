@@ -38,7 +38,7 @@ nav.main img{
     box-shadow: -0.5vh 0.5vw 1.5vh 1vw rgba(0,0,0,0.23);
     width: 22vw;
     height: 46vh;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 0.25vh 1vw 0vh 1vw;
     border: 1px solid black;
     border-radius: 3%;
 }
