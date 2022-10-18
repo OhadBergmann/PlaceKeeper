@@ -29,6 +29,10 @@ main.main-map section.map{
    
 }
 
+div#map{
+    height: 100%;
+}
+
 main.main-map section.user-locs{
     display: flex;
     flex-direction: column;
