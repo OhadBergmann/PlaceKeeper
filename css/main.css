@@ -1,0 +1,46 @@
+@import url('home-page.css');
+@import url('user-pref.css');
+@import url('map.css');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle, #ffffff25, #fffeeb25, #ffe8a925, #ffda8425, #ffffff25);
+}
+
+aside.fixed {
+    position: fixed;
+    display: inline-block;
+    background-color: rgba(49, 97, 201, 0.821);
+}
+
+aside.fixed.top{
+    top: 0;
+    left: 0;
+    height: 1vh;
+    width: 100vw;
+} 
+
+aside.fixed.bot{
+    bottom: 0;
+    left: 0;
+    height: 1vh;
+    width: 100vw;
+} 
+
+aside.fixed.left{
+    top: 1vh;
+    left: 0;
+    height: 98vh;
+    width: 1vw;
+} 
+
+aside.fixed.right{
+    top: 1vh;
+    right: 0;
+    height: 98vh;
+    width: 1vw;
+} 
+

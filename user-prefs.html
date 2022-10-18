@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceKeeper By Ohad Bergmann</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="onInitUserPref()">
+    <aside class="fixed top"></aside>
+    <aside class="fixed bot"></aside>
+    <aside class="fixed right"></aside>
+    <aside class="fixed left"></aside>
+    <nav class="user-pref-nav">
+        <a class="to-home-page" href="index.html">
+            <label class="to-home-page">Home</label>
+            <img src="img/arrow-left.png" alt="">
+        </a>
+        <a class="to-map-page" href="map.html">
+            <label class="to-map-page">Map</label>
+            <img src="img/arrow-right.png" alt="">
+        </a>
+        
+    </nav>
+    <main class="u-main-container">
+        <form class="user-form" onsubmit="onUserPrefSubmit(event,this)">
+            <h2><span></span> preference </h2>
+            <article>
+                <label for="updateUserName">Update your user name:</label>
+                <input id="updateUserName" type="text" value=""/>
+            </article>
+            <article>
+                <label for="prefBGColoer">select backgond color:</label>
+                <input id="prefBGColoer" class="color-picker" type="color" value="#0a0a0a"/>
+            </article>
+            <article>
+                <label for="prefTxtColor">Text Color:</label>
+                <input id="prefTxtColor" class="color-picker" type="color" value="#fcfcfc"/>
+            </article>
+            <article>
+                <label for="prefZoom" class="prefZoom-label">Zoom factor for the map:</label>
+                <input id="prefZoom" type="range" min="1" max="21" value="5" onchange="onRangeChage()"/>
+                <span>1</span>
+            </article>
+            <article>
+                <label for="locationCoord">Map starting location</label>
+                <input id="locationCoord" type="text" placeholder="longitude,latitude" value=""/>
+            </article>
+            <button>Confirm Changes</button>
+        </form>
+    </main>
+
+    <script src="lib/jquery.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/user-pref.js"></script>
+
+</body>
+</html>
